@@ -271,47 +271,133 @@
           <!-- PROJECT 05: PHARMACYCLE.AI -->
           <div class="col-lg-6 reveal">
             <article class="project-card">
-              <a class="project-preview preview-pharmacycle"
+            <a class="project-preview preview-pharmacycle"
    href="https://pharmacycle-ng.vercel.app/"
    target="_blank" rel="noopener noreferrer"
    aria-label="Open PharmaCycle.AI">
 
-  <div class="pc-preview-nav">
-    <span class="pc-brand"><i class="bi bi-recycle"></i> PharmaCycle<span>.AI</span></span>
-    <span class="pc-nav-links">INVENTORY &nbsp; INSIGHTS &nbsp; TRANSFERS</span>
-    <span class="pc-nav-status"><i></i> ACTIVE</span>
-  </div>
+  <div class="pc-dashboard">
 
-  <div class="pc-preview-hero"> 
-    <div class="pc-preview-copy">
-      <span class="pc-eyebrow">AI-POWERED PHARMACY MANAGEMENT</span>
-      <h4>Smarter inventory.<br><em>Better decisions.</em></h4>
-      <p>Manage pharmacy stock, monitor expiry dates and connect with other pharmacies.</p>
-      <div class="pc-preview-button">Explore Platform <i class="bi bi-arrow-right"></i></div>
-      <div class="pc-preview-benefits">
-        <span><i class="bi bi-shield-check"></i> Smart monitoring</span>
-        <span><i class="bi bi-stars"></i> AI insights</span>
+    <aside class="pc-sidebar">
+      <div class="pc-logo">
+        <span class="pc-logo-icon">+</span>
+        <span>Pharma<span>Cycle</span></span>
       </div>
-    </div>
 
-    <div class="pc-visual">
-      <div class="pc-orbit pc-orbit-one"></div>
-      <div class="pc-orbit pc-orbit-two"></div>
-      <div class="pc-recycle-icon"><i class="bi bi-recycle"></i></div>
-      <div class="pc-medicine"><i class="bi bi-capsule-pill"></i></div>
-      <div class="pc-leaf"><i class="bi bi-leaf"></i></div>
-      <div class="pc-floating-card">
-        <i class="bi bi-check-circle-fill"></i>
-        <span>Stock monitored</span>
+      <div class="pc-side-label">WORKSPACE</div>
+      <div class="pc-side-item active">▦ <span>Dashboard</span></div>
+      <div class="pc-side-item">▤ <span>Inventory</span></div>
+      <div class="pc-side-item">◷ <span>Expiry tracking</span></div>
+      <div class="pc-side-item">⇄ <span>Transfers</span></div>
+      <div class="pc-side-item">✧ <span>AI insights</span></div>
+
+      <div class="pc-sidebar-bottom">
+        <div class="pc-avatar">P</div>
+        <span>Pharmacy Admin</span>
       </div>
-    </div>
-  </div>
+    </aside>
 
-  <div class="pc-preview-bottom">
-    <div><i class="bi bi-box-seam"></i><span><b>Inventory</b><small>Stock management</small></span></div>
-    <div><i class="bi bi-clock-history"></i><span><b>Expiry alerts</b><small>30-day monitoring</small></span></div>
-    <div><i class="bi bi-arrow-left-right"></i><span><b>Transfers</b><small>Pharmacy connections</small></span></div>
-    <div><i class="bi bi-graph-up-arrow"></i><span><b>AI insights</b><small>Intelligent analytics</small></span></div>
+    <div class="pc-main">
+
+      <div class="pc-topbar">
+        <div>
+          <small>OVERVIEW / DASHBOARD</small>
+          <h4>Good morning, Admin</h4>
+        </div>
+        <div class="pc-top-right">
+          <span class="pc-notification">♧</span>
+          <span class="pc-status"><i></i> System active</span>
+        </div>
+      </div>
+
+      <div class="pc-welcome">
+        <div>
+          <h5>Your pharmacy at a glance</h5>
+          <p>Monitor your inventory and make smarter decisions.</p>
+        </div>
+        <span class="pc-date">TODAY</span>
+      </div>
+
+      <div class="pc-stat-grid">
+        <div class="pc-stat">
+          <span>Total medicines</span>
+          <strong>1,248</strong>
+          <small>Inventory items</small>
+          <i class="pc-stat-icon">▤</i>
+        </div>
+
+        <div class="pc-stat">
+          <span>Low stock</span>
+          <strong>18</strong>
+          <small>Needs attention</small>
+          <i class="pc-stat-icon orange">!</i>
+        </div>
+
+        <div class="pc-stat">
+          <span>Near expiry</span>
+          <strong>07</strong>
+          <small>Within 30 days</small>
+          <i class="pc-stat-icon yellow">◷</i>
+        </div>
+      </div>
+
+      <div class="pc-content-grid">
+
+        <div class="pc-panel pc-inventory">
+          <div class="pc-panel-heading">
+            <strong>Recent inventory</strong>
+            <span>View all →</span>
+          </div>
+
+          <div class="pc-table-head">
+            <span>MEDICINE</span>
+            <span>STOCK</span>
+            <span>STATUS</span>
+          </div>
+
+          <div class="pc-medicine-row">
+            <span><i class="pc-medicine-dot green"></i> Paracetamol</span>
+            <b>240</b>
+            <em class="pc-good">Healthy</em>
+          </div>
+
+          <div class="pc-medicine-row">
+            <span><i class="pc-medicine-dot orange"></i> Amoxicillin</span>
+            <b>18</b>
+            <em class="pc-low">Low stock</em>
+          </div>
+
+          <div class="pc-medicine-row">
+            <span><i class="pc-medicine-dot yellow"></i> Ibuprofen</span>
+            <b>42</b>
+            <em class="pc-expiry">Near expiry</em>
+          </div>
+        </div>
+
+        <div class="pc-panel pc-ai-panel">
+          <div class="pc-ai-icon">✧</div>
+          <strong>AI Inventory Insights</strong>
+          <p>Smart recommendations to help you manage your pharmacy inventory.</p>
+
+          <div class="pc-ai-tip">
+            <span>EXPIRY RISK</span>
+            <b>Review medicines approaching expiry.</b>
+          </div>
+
+          <div class="pc-ai-tip">
+            <span>RESTOCK SUGGESTION</span>
+            <b>Check low-stock medicines.</b>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pc-bottom-note">
+        <span><i></i> Inventory monitoring active</span>
+        <span>Powered by PharmaCycle.AI</span>
+      </div>
+
+    </div>
   </div>
 
   <span class="preview-open"><i class="bi bi-arrow-up-right"></i></span>
