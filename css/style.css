@@ -191,101 +191,249 @@ button,input,textarea{font:inherit}
 .hiit-course-row small{font-size:7px;color:#7187a4}
 
 /* PHARMACYCLE.AI PROJECT PREVIEW */
-.preview-pharmacycle{
+.preview-pharmacycle {
+  position: relative;
+  overflow: hidden;
+  padding: 17px 22px;
+  color: #103c3b;
   background:
-    radial-gradient(circle at 85% 15%,rgba(46,214,165,.17),transparent 35%),
-    linear-gradient(135deg,#0b1d1b,#101b20);
-  padding:18px 23px;
-  color:#eafff5;
+    radial-gradient(circle at 82% 25%, rgba(36,210,165,.2), transparent 35%),
+    linear-gradient(125deg,#f5fffc,#e1faf2 65%,#d4f5e9);
 }
-.pharmacycle-top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding-bottom:12px;
-  border-bottom:1px solid rgba(255,255,255,.1);
+
+.pc-preview-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(13,105,83,.13);
 }
-.pharmacycle-brand{
-  font:600 14px var(--font-display);
-  color:#f0fff7;
+
+.pc-brand {
+  font: 700 12px var(--font-display);
+  color: #123e43;
+  white-space: nowrap;
 }
-.pharmacycle-brand i{
-  color:#55dfad;
-  margin-right:5px;
+
+.pc-brand i,
+.pc-brand span {
+  color: #08a982;
 }
-.pharmacycle-brand span{color:#55dfad}
-.pharmacycle-live{
-  font-size:7px;
-  letter-spacing:.1em;
-  color:#91b9a9;
+
+.pc-brand i { margin-right: 4px; }
+
+.pc-nav-links {
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: #547b76;
 }
-.pharmacycle-live i{
-  font-size:5px;
-  color:#55dfad;
-  margin-right:4px;
+
+.pc-nav-status {
+  font-size: 6px;
+  font-weight: 700;
+  color: #078b6b;
+  white-space: nowrap;
 }
-.pharmacycle-content{padding:17px 5px 5px}
-.pharmacycle-label{
-  font-size:7px;
-  letter-spacing:.17em;
-  font-weight:700;
-  color:#73c8a8;
+
+.pc-nav-status i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 3px;
+  border-radius: 50%;
+  background: #0ab98b;
 }
-.pharmacycle-content h4{
-  font:600 27px/.98 var(--font-display);
-  letter-spacing:-.055em;
-  margin:9px 0;
-  color:#f1fff8;
+
+.pc-preview-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 169px;
+  gap: 10px;
 }
-.pharmacycle-content h4 em{
-  font-style:normal;
-  color:#55dfad;
+
+.pc-preview-copy {
+  position: relative;
+  z-index: 2;
+  width: 58%;
 }
-.pharmacycle-content>p{
-  font-size:9px;
-  color:#a0b9ae;
-  margin-bottom:15px;
+
+.pc-eyebrow {
+  display: inline-block;
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  color: #078e70;
 }
-.pharmacycle-stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
+
+.pc-preview-copy h4 {
+  font: 700 25px/.98 var(--font-display);
+  letter-spacing: -.06em;
+  color: #102f40;
+  margin: 8px 0;
 }
-.pharmacycle-stats>div{
-  display:flex;
-  align-items:center;
-  gap:7px;
-  padding:9px 7px;
-  background:rgba(255,255,255,.045);
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:5px;
-  min-width:0;
+
+.pc-preview-copy h4 em {
+  font-style: normal;
+  color: #0aaa83;
 }
-.pharmacycle-stats>div>i{
-  color:#55dfad;
-  font-size:13px;
+
+.pc-preview-copy p {
+  max-width: 230px;
+  font-size: 8px;
+  line-height: 1.6;
+  color: #56746f;
+  margin-bottom: 10px;
 }
-.pharmacycle-stats b,.pharmacycle-stats small{display:block}
-.pharmacycle-stats b{
-  font-size:7px;
-  color:#e6fff2;
+
+.pc-preview-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #08ae85;
+  color: white;
+  font-size: 7px;
+  font-weight: 700;
 }
-.pharmacycle-stats small{
-  font-size:6px;
-  color:#91a99e;
+
+.pc-preview-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: #347a68;
+  font-size: 7px;
 }
-.pharmacycle-ai{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  margin:12px 5px 0;
-  padding:6px 9px;
-  background:rgba(85,223,173,.09);
-  border:1px solid rgba(85,223,173,.2);
-  border-radius:4px;
-  color:#83e8bb;
-  font-size:8px;
-  font-weight:600;
+
+.pc-preview-benefits i {
+  color: #08ae85;
+  margin-right: 3px;
+}
+
+.pc-visual {
+  position: relative;
+  width: 40%;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pc-orbit {
+  position: absolute;
+  border: 1px solid rgba(9,173,132,.2);
+  border-radius: 50%;
+}
+
+.pc-orbit-one { width: 130px; height: 130px; }
+
+.pc-orbit-two {
+  width: 100px;
+  height: 100px;
+  border-style: dashed;
+}
+
+.pc-recycle-icon {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: linear-gradient(145deg,#d2f8e9,#a0e8ce);
+  color: #079c76;
+  font-size: 58px;
+  box-shadow: 0 12px 35px rgba(7,156,118,.13);
+}
+
+.pc-medicine {
+  position: absolute;
+  right: 3px;
+  bottom: 20px;
+  width: 39px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #fff;
+  border: 1px solid #c6e8dc;
+  color: #08a982;
+  font-size: 24px;
+  transform: rotate(13deg);
+  box-shadow: 0 8px 15px rgba(10,90,70,.12);
+}
+
+.pc-leaf {
+  position: absolute;
+  left: 2px;
+  bottom: 19px;
+  color: #3aaf79;
+  font-size: 27px;
+  transform: rotate(-25deg);
+}
+
+.pc-floating-card {
+  position: absolute;
+  top: 12px;
+  right: -3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 8px;
+  border: 1px solid rgba(8,140,104,.12);
+  border-radius: 6px;
+  background: rgba(255,255,255,.92);
+  color: #27715e;
+  font-size: 7px;
+  box-shadow: 0 5px 15px rgba(0,70,50,.08);
+}
+
+.pc-floating-card i { color: #0bb489; }
+
+.pc-preview-bottom {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 7px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(13,105,83,.13);
+}
+
+.pc-preview-bottom>div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.pc-preview-bottom>div>i {
+  color: #08a982;
+  font-size: 15px;
+}
+
+.pc-preview-bottom b,
+.pc-preview-bottom small { display: block; }
+
+.pc-preview-bottom b {
+  font-size: 7px;
+  color: #164c43;
+}
+
+.pc-preview-bottom small {
+  font-size: 6px;
+  color: #66847a;
+}
+
+.preview-pharmacycle .preview-open {
+  background: rgba(7,92,72,.85);
+  border-color: rgba(255,255,255,.5);
+}
+
+.preview-pharmacycle:hover .preview-open {
+  background: #08ae85;
 }
 
 /* DML PORTFOLIO PREVIEW */
